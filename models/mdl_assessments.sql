@@ -1,3 +1,5 @@
+Create table learninganalytics.learninganalytics.mdl_assessments as
+(
 SELECT mdl_adaptiveassessment.timecreated,
     mdl_adaptiveassessment.timemodified,
     mdl_adaptiveassessment.name,
@@ -10,4 +12,5 @@ UNION
     mdl_quiz.name,
     mdl_quiz.course,
     mdl_quiz.id
-   FROM learninganalytics.mdl_quiz;
+   FROM learninganalytics.mdl_quiz
+);

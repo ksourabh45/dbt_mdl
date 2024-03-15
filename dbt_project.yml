@@ -5,4 +5,5 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 config-version: 2
 
 models:
+  schema: airbyte
   +materialized: table

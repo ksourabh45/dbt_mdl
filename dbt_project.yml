@@ -6,6 +6,3 @@ config-version: 2
 
 models:
   +materialized: table
-  -name: Course
-  unique_key: id
-  +schema: my_schema

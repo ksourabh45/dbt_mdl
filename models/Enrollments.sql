@@ -1,8 +1,9 @@
 SELECT DISTINCT u.id AS userid,
        c.id AS courseid,
+       e.id AS enrolid,
        ct.id as contextid,
-	   To_timestamp(e.timecreated) AS enrollment_time,
-       ra.roleid AS role_id
+       To_timestamp(e.timecreated) AS enrollment_time,
+       ra.roleid AS roleid
 FROM learninganalytics.mdl_user u
 JOIN learninganalytics.mdl_user_enrolments ue ON ue.userid = u.id
 JOIN learninganalytics.mdl_enrol e ON e.id = ue.enrolid
